@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f6f6a" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <title>Quiz — Bol Hindi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header"></header>
+
+    <main class="page">
+      <div class="section-head">
+        <div>
+          <h1 data-i18n="quizTitle">Practice quiz</h1>
+          <p data-i18n="quizLead">Modes: meaning, reverse, alphabet. Keys 1–4 answer, Enter = next.</p>
+        </div>
+      </div>
+
+      <div id="mode-picker" class="mode-picker" role="group" aria-label="Quiz mode"></div>
+      <label class="quiz-option">
+        <input id="quiz-learned-only" type="checkbox" />
+        <span data-i18n="quizLearnedOnly">Learned words only</span>
+      </label>
+      <section id="quiz-root" class="panel quiz-shell" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer">Learn Hindi for English and Tamil speakers.</p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/data-words.js"></script>
+    <script src="js/data-alphabet.js"></script>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>
+
+
+

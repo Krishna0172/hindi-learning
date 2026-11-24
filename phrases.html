@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f6f6a" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <title>Phrases — Bol Hindi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header"></header>
+
+    <main class="page">
+      <div class="section-head">
+        <div>
+          <h1 data-i18n="phrasesTitle">Useful phrases</h1>
+          <p data-i18n="phrasesLead">Everyday Hindi sentences with English and Tamil meanings.</p>
+        </div>
+      </div>
+
+      <label class="search-wrap">
+        <span class="visually-hidden" data-i18n="searchPlaceholder">Search</span>
+        <input id="phrase-search" class="search-input" type="search" autocomplete="off" />
+      </label>
+      <div id="phrase-filters" class="filters" role="group" aria-label="Filters"></div>
+      <div id="phrases-grid" class="grid words-grid"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer">Learn Hindi for English and Tamil speakers.</p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/data-phrases.js"></script>
+    <script src="js/phrases.js"></script>
+  </body>
+</html>
+
+
+
